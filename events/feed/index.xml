@@ -12,8 +12,8 @@
 
 <channel>
 	<title>Events &#8211; Bromley Community Choir</title>
-	<atom:link href="/events/feed/" rel="self" type="application/rss+xml" />
-	<link>/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../../index.html</link>
 	<description>Bromley Community Choir</description>
 	<lastBuildDate>Sun, 10 Dec 2017 16:58:53 +0000</lastBuildDate>
 	<language>en-US</language>
@@ -24,14 +24,14 @@
 	<generator>https://wordpress.org/?v=5.8.4</generator>
 	<item>
 		<title>Free Christmas Charity Concert</title>
-		<link>/events/free-christmas-charity-concert/</link>
+		<link>./../free-christmas-charity-concert/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Sun, 10 Dec 2017 16:58:11 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=170</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=170</guid>
 
 					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" class="alignnone  wp-image-171" src="/wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM-207x300.jpeg" alt="" width="813" height="1178" srcset="/wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM-207x300.jpeg 207w, /wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM.jpeg 706w" sizes="(max-width: 813px) 100vw, 813px" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" class="alignnone  wp-image-171" src="./../../wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM-207x300.jpeg" alt="" width="813" height="1178" srcset="./../../wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM-207x300.jpeg 207w, ./../../wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM.jpeg 706w" sizes="(max-width: 813px) 100vw, 813px" /></p>
 ]]></content:encoded>
 					
 		
@@ -39,14 +39,14 @@
 			</item>
 		<item>
 		<title>Choir Rehearsal</title>
-		<link>/events/choir-rehearsal/</link>
+		<link>./../choir-rehearsal/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2017 20:11:38 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=33</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=33</guid>
 
 					<description><![CDATA[]]></description>
-										<content:encoded><![CDATA[<p><img loading="lazy" class="alignnone size-medium wp-image-72" src="/wp-content/uploads/2017/06/Picture29-300x181.png" alt="" width="300" height="181" srcset="/wp-content/uploads/2017/06/Picture29-300x181.png 300w, /wp-content/uploads/2017/06/Picture29-768x464.png 768w, /wp-content/uploads/2017/06/Picture29-1024x618.png 1024w, /wp-content/uploads/2017/06/Picture29.png 1790w" sizes="(max-width: 300px) 100vw, 300px" /></p>
+										<content:encoded><![CDATA[<p><img loading="lazy" class="alignnone size-medium wp-image-72" src="./../../wp-content/uploads/2017/06/Picture29-300x181.png" alt="" width="300" height="181" srcset="./../../wp-content/uploads/2017/06/Picture29-300x181.png 300w, ./../../wp-content/uploads/2017/06/Picture29-768x464.png 768w, ./../../wp-content/uploads/2017/06/Picture29-1024x618.png 1024w, ./../../wp-content/uploads/2017/06/Picture29.png 1790w" sizes="(max-width: 300px) 100vw, 300px" /></p>
 ]]></content:encoded>
 					
 		
@@ -54,11 +54,11 @@
 			</item>
 		<item>
 		<title>Performing in INTU, Bromley</title>
-		<link>/events/performing-in-intu-bromley/</link>
+		<link>./../performing-in-intu-bromley/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2017 20:07:51 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=136</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=136</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -68,11 +68,11 @@
 			</item>
 		<item>
 		<title>Performing at the turning on of the Christmas Lights in Catford</title>
-		<link>/events/performing-at-the-turning-on-of-the-christmas-lights-in-catford/</link>
+		<link>./../performing-at-the-turning-on-of-the-christmas-lights-in-catford/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2017 20:07:27 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=135</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=135</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -82,11 +82,11 @@
 			</item>
 		<item>
 		<title>Performing at the Grand Christmas Concert in the Civic centre</title>
-		<link>/events/performing-at-the-grand-christmas-concert-in-the-civic-centre/</link>
+		<link>./../performing-at-the-grand-christmas-concert-in-the-civic-centre/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2017 20:07:07 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=134</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=134</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -96,11 +96,11 @@
 			</item>
 		<item>
 		<title>Performing at  the Bromley Court Hotel</title>
-		<link>/events/performing-at-the-bromley-court-hotel/</link>
+		<link>./../performing-at-the-bromley-court-hotel/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2017 20:06:42 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=133</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=133</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -110,11 +110,11 @@
 			</item>
 		<item>
 		<title>Performing at the Switch on of Christmas light in Bromley High Street</title>
-		<link>/events/performing-at-the-switch-on-of-christmas-light-in-bromley-high-street/</link>
+		<link>./../performing-at-the-switch-on-of-christmas-light-in-bromley-high-street/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2017 20:06:12 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=132</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=132</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>
@@ -124,11 +124,11 @@
 			</item>
 		<item>
 		<title>Supporting a fundraising concert in Willesden</title>
-		<link>/events/supporting-a-fundraising-concert-in-willesden/</link>
+		<link>./../supporting-a-fundraising-concert-in-willesden/index.html</link>
 		
 		<dc:creator><![CDATA[vfpae]]></dc:creator>
 		<pubDate>Wed, 14 Jun 2017 20:05:43 +0000</pubDate>
-				<guid isPermaLink="false">/?post_type=event&#038;p=131</guid>
+				<guid isPermaLink="false">./../../index.html?post_type=event&#038;p=131</guid>
 
 					<description><![CDATA[]]></description>
 										<content:encoded><![CDATA[]]></content:encoded>

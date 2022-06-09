@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Free Christmas Concert	</title>
-	<atom:link href="/2017/12/10/free-christmas-concert/feed/" rel="self" type="application/rss+xml" />
-	<link>/2017/12/10/free-christmas-concert/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Bromley Community Choir</description>
 	<lastBuildDate>Sun, 10 Dec 2017 17:00:34 +0000</lastBuildDate>
 	<sy:updatePeriod>

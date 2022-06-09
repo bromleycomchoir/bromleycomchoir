@@ -174,7 +174,7 @@ a:active {
   margin: 0px 0px 20px 0px;
 }
 #bible-quote {
-  background: url("/wp-content/themes/Malaka/images/shattered.png");
+  background: url("./images/shattered.png");
 }
 #bible-quote blockquote {
   margin: 0px;
@@ -216,7 +216,7 @@ a:active {
   display: inline-block;
 }
 #combo-section {
-  background: url("/wp-content/themes/Malaka/images/shattered.png");
+  background: url("./images/shattered.png");
 }
 #combo-section h2.section-title {
   text-transform: uppercase;
@@ -305,7 +305,7 @@ a:active {
   background: #fff;
 }
 .page-head {
-  background: url("/wp-content/themes/Malaka/images/shattered.png");
+  background: url("./images/shattered.png");
   padding: 30px 0px;
 }
 .page-head h2.page-title {

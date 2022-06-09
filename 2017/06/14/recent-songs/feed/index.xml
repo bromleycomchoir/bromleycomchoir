@@ -11,8 +11,8 @@
 <channel>
 	<title>
 	Comments on: Recent Songs	</title>
-	<atom:link href="/2017/06/14/recent-songs/feed/" rel="self" type="application/rss+xml" />
-	<link>/2017/06/14/recent-songs/</link>
+	<atom:link href="./index.html" rel="self" type="application/rss+xml" />
+	<link>./../index.html</link>
 	<description>Bromley Community Choir</description>
 	<lastBuildDate>Wed, 14 Jun 2017 01:35:34 +0000</lastBuildDate>
 	<sy:updatePeriod>
