@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	
+	xmlns:georss="http://www.georss.org/georss"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	>
+
+<channel>
+	<title>Uncategorized &#8211; Bromley Community Choir</title>
+	<atom:link href="/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>/</link>
+	<description>Bromley Community Choir</description>
+	<lastBuildDate>Sun, 10 Dec 2017 17:00:34 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.4</generator>
+	<item>
+		<title>Free Christmas Concert</title>
+		<link>/2017/12/10/free-christmas-concert/</link>
+		
+		<dc:creator><![CDATA[vfpae]]></dc:creator>
+		<pubDate>Sun, 10 Dec 2017 17:00:34 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=172</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[<p><img loading="lazy" class="alignnone  wp-image-171" src="/wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM-207x300.jpeg" alt="" width="1102" height="1597" srcset="/wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM-207x300.jpeg 207w, /wp-content/uploads/2017/12/WhatsApp-Image-2017-12-10-at-7.34.53-AM.jpeg 706w" sizes="(max-width: 1102px) 100vw, 1102px" /></p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Recent Songs</title>
+		<link>/2017/06/14/recent-songs/</link>
+		
+		<dc:creator><![CDATA[vfpae]]></dc:creator>
+		<pubDate>Wed, 14 Jun 2017 01:34:58 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=107</guid>
+
+					<description><![CDATA[Bridge Over Troubled Water Oh, Happy Day Immanuel For the Beauty of the Earth You Are Mine The Prayer You Raise Me Up Happy Joy [&#8230;]]]></description>
+										<content:encoded><![CDATA[<ol>
+<li>Bridge Over Troubled Water</li>
+<li>Oh, Happy Day</li>
+<li>Immanuel</li>
+<li>For the Beauty of the Earth</li>
+<li>You Are Mine</li>
+<li>The Prayer</li>
+<li>You Raise Me Up</li>
+<li>Happy</li>
+<li>Joy to the World</li>
+<li>Silent Night</li>
+<li>Hark the Herald Angels Sing</li>
+<li>O Holy Night</li>
+<li>And lots more</li>
+</ol>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Reviews</title>
+		<link>/2017/06/14/reviews/</link>
+		
+		<dc:creator><![CDATA[vfpae]]></dc:creator>
+		<pubDate>Wed, 14 Jun 2017 01:28:53 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">/?p=102</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
