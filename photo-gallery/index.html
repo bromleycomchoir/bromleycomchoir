@@ -27,6 +27,118 @@ img.emoji {
 	background: none !important;
 	padding: 0 !important;
 }</style>
+<style>
+#hcg-slider-1 .hcg-slide-container {
+	width: auto;
+	height: auto;
+}
+.hcg-slider {
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.hcg-slide-container {
+	max-width: 100%;
+	display: inline-block;
+	position: relative;
+}
+.hcg-slides {
+	display: none;
+	text-align: center;
+	overflow: hidden;
+}
+.hcg-slides img {
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	border-radius: 5px;
+	border: solid 1px #a0a0a0;
+	vertical-align: middle;
+}
+.hcg-slide-text {
+	color: #ffffff;
+	font-size: 14px;
+	padding: 3px 5px;
+	position: absolute;
+	bottom: 0;
+	border-radius: 5px;
+	left: 50%;
+	text-align: center;
+	text-shadow: 0 0 2px #000;
+	background-color: rgba(255,255,255,0.30);
+	display: inline-block;
+	transform: translate(-50%, -5px);
+}
+.hcg-slide-prev, .hcg-slide-next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	text-decoration: none;
+}
+.hcg-slide-next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+.hcg-slide-prev {
+	left: 0;
+	border-radius: 0 3px 3px 0;
+}
+.hcg-slide-prev:hover, .hcg-slide-next:hover {
+	background-color: #000c;
+}
+.hcg-slide-dot-control {
+	margin-top: 10px;
+	text-align: center;
+}
+.hcg-slide-dot {
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+.hcg-slide-dot.dot-active {
+	background-color: #717171;
+}
+.hcg-slide-number {
+	color: #ffffff;
+	font-size: 12px;
+	padding: 4px 7px;
+	position: absolute;
+	border-radius: 5px;
+	top: 5px;
+	left: 5px;
+	background-color: rgba(255,255,255,0.30);
+}
+/************CSS Animation***********/
+
+.animated {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.fadeIn {
+	animation-name: fadeIn;
+}
+
+
+</style>
 	<link rel="stylesheet" id="wp-block-library-css" href="./../wp-includes/css/dist/block-library/style.min.css?ver=5.8.4" type="text/css" media="all">
 <link rel="stylesheet" id="mediaelement-css" href="./../wp-includes/js/mediaelement/mediaelementplayer-legacy.min.css?ver=4.2.16" type="text/css" media="all">
 <link rel="stylesheet" id="wp-mediaelement-css" href="./../wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=5.8.4" type="text/css" media="all">
@@ -58,7 +170,7 @@ var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_valid
 <link rel="https://api.w.org/" href="./../wp-json/index.html">
 <link rel="alternate" type="application/json" href="./../wp-json/wp/v2/pages/99/index.html">
 <link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml"> 
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 5.8.4">
 <link rel="canonical" href="./index.html">
 <link rel="shortlink" href="./../index.html?p=99">
@@ -72,12 +184,12 @@ var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_valid
 <div id="page" class="hfeed site">
 
 	<header id="masthead" class="site-header" role="banner">
-		<div class="container"><div class="row"> 
+		<div class="container"><div class="row">
 			<div class="col-md-4">
 				<div class="site-branding">
-					
+
 					<h1 class="site-title logo"><a id="blogname" rel="home" href="./../index.html" title="Bromley Community Choir">Bromley Community Choir</a></h1>
-	
+
 				</div>
 			</div>
 			<div class="col-md-8">
@@ -101,343 +213,62 @@ var bwg_objectsL10n = {"bwg_field_required":"field is required.","bwg_mail_valid
 		<div class="col-md-12">
 			<h2 class="page-title">Photo Gallery</h2>
 			<p id="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
-			    
+
 			</p>
 
 		</div>
 	</div></div>
 </div>
-
-
-<div class="container"><div class="row"> 
+
+<div id="hcg-slider-1" class="hcg-slider">
+<div class="hcg-slide-container">
+	<div class="hcg-slider-body">
+		<a class="hcg-slides animated" style="display:block">
+			<span class="hcg-slide-number">1/5</span>
+			<img src="https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-1.png" alt="">
+			<span class="hcg-slide-text"></span>
+		</a>
+	</div>
+	<a class="hcg-slide-prev" href="#">❮</a>
+	<a class="hcg-slide-next" href="#">❯</a>
+</div>
+<div class="hcg-slide-dot-control"></div>
+</div>
+
+<div class="container"><div class="row">
 	<div class="col-md-8">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			
+
 
-				
+
 
 <article id="post-99" class="post-99 page type-page status-publish hentry">
 	<!--<header class="entry-header">
 		<h1 class="entry-title">Photo Gallery</h1>
-	</header><!-- .entry-header (This was commented out by Damian on June 14, 2014)--> 
-
-	<div class="entry-content">
-		<style id="bwg-style-0">#bwg_container1_0 #bwg_container2_0 .image_browser_images_conteiner_0 * {        -moz-box-sizing: border-box;        box-sizing: border-box;      }      #bwg_container1_0 #bwg_container2_0 .image_browser_images_conteiner_0{		background-color: rgba(245, 245, 245, 0.90);		text-align: center;		width: 100%;		border-style: none;		border-width: 2px;		border-color: #F7F7F7;		padding: 4px;		border-radius: 0;		position:relative;      }      #bwg_container1_0 #bwg_container2_0 .image_browser_images_0 {		display: inline-block;		-moz-box-sizing: border-box;		box-sizing: border-box;		font-size: 0;		text-align: center;		max-width: 100%;		width: 100%;      }      #bwg_container1_0 #bwg_container2_0 .image_browser_image_buttons_conteiner_0 {		text-align: center;      }      #bwg_container1_0 #bwg_container2_0 .image_browser_image_buttons_0 {		display: inline-block;		width:100%;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_image_0 {        background-color: rgba(235, 235, 235, 0.80);		text-align: center;		display: inline-block;		vertical-align: middle;		margin: 2px auto;		padding: 4px;		border-radius: 0;		border: 1px none #F5F5F5;		box-shadow: ;		max-width: 800px;		width: 100%;		/*z-index: 100;*/		position: relative;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_alt_0{		display: table;		width: 100%;		font-size: 15px;		font-family: segoe ui;		color: #000000;		text-align:center;		padding-left: 8px;        word-break: break-word;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_img_0 {        padding: 0 !important;		max-width: 100% !important;		height: inherit !important;		width: 100%;      }      @media only screen and (max-width : 320px) {		#bwg_container1_0 #bwg_container2_0 .displaying-num_0 {		  display: none;		}		#bwg_container1_0 #bwg_container2_0 .bwg_image_alt_0 {		  font-size: 10px !important;		}		#bwg_container1_0 #bwg_container2_0 .bwg_watermark_text_0,		#bwg_container1_0 #bwg_container2_0 .bwg_watermark_text_0:hover {		  font-size: 10px !important;		  text-decoration: none;		  margin: 4px;		  font-family: Arial;		  color: #FFFFFF !important;		  opacity: 0.30;		  text-decoration: none;		  position: relative;		  z-index: 10141;		}		#bwg_container1_0 #bwg_container2_0 .bwg_image_browser_image_description_0 {		  color: #000000;		  display: table;		  width: 100%;		  text-align: left;		  font-size: 8px !important;		  font-family: segoe ui;		  padding: 8px 8px 8px 8px;		  /*word-break: break-all;*/		  border-style: none;		  background-color: #EBEBEB;		  border-radius: 0;		  border-width: 1px;		}		#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {		  font-size: 10px !important;		}      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_image_desp_0 {				display: table;				clear: both;				text-align: center;        padding: 0px 5px 0px 5px;				width: 100%;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_image_description_0 {        color: #000000;		display: table;		width: 100%;		text-align: left;		font-size: 15px;		font-family: segoe ui;		padding: 8px 8px 8px 8px;		word-break: break-word;		border-style: none;		background-color: #EBEBEB;		border-radius: 0;		border-width: 1px;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_image_alt_0 {      	display:table;        clear: both;        text-align: center;        padding: 8px;        width: 100%;      }      /*watermark*/      #bwg_container1_0 #bwg_container2_0 .bwg_watermark_text_0,      #bwg_container1_0 #bwg_container2_0 .bwg_watermark_text_0:hover {        text-decoration: none;        margin: 4px;        font-size: 12px;        font-family: Arial;        color: #FFFFFF !important;        opacity: 0.30;        position: relative;        z-index: 10141;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_image_contain_0{        position: absolute;        text-align: center;        vertical-align: middle;        width: 100%;        height: 100%;        cursor: pointer;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_watermark_contain_0{        display: table;        vertical-align: middle;        width: 100%;        height: 100%;      }	       #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_watermark_cont_0{        display: table-cell;        text-align: ;        position: relative;        vertical-align: ;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_watermark_0{		display: inline-block;		overflow: hidden;		position: relative;		vertical-align: middle;		z-index: 10140;		width: 90px;		max-width: 11.25%;		margin: 10px 10px 10px 10px ;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_watermark_text_0{        display: inline-block;		overflow: hidden;		position: relative;		vertical-align: middle;		z-index: 10140;		margin: 10px 10px 10px 10px;      }      #bwg_container1_0 #bwg_container2_0 .bwg_image_browser_watermark_img_0{        max-width: 100%;        opacity: 0.30;        position: relative;        z-index: 10141;      }      #bwg_container1_0 #bwg_container2_0 .bwg_none_selectable {        -webkit-touch-callout: none;        -webkit-user-select: none;        -khtml-user-select: none;        -moz-user-select: none;        -ms-user-select: none;        user-select: none;       ecoration: none;    }    #bwg_container1_0 #bwg_container2_0 .bwg_gal_title_0 {      background-color: rgba(0, 0, 0, 0);      color: #CCCCCC;      display: block;      font-family: segoe ui;      font-size: 16px;      font-weight: bold;      padding: 2px;      text-shadow: 0px 0px 0px #888888;      text-align: center;    }</style>    <div id="bwg_container1_0" class="bwg_container bwg_thumbnail bwg_image_browser" data-right-click-protection="0" data-bwg="0" data-gallery-type="image_browser" data-current-url="./photo-gallery/" data-lightbox-url="./wp-admin/admin-ajax.php?action=GalleryBox&#038;current_view=0&#038;gallery_id=0&#038;tag=0&#038;theme_id=1&#038;shortcode_id=1&#038;sort_by=order&#038;order_by=asc&#038;current_url=.%2Fphoto-gallery%2F" data-gallery-id="0" data-popup-width="800" data-popup-height="500" data-is-album="gallery" data-buttons-position="bottom">      <div id="bwg_container2_0">             <div id="ajax_loading_0" class="bwg_loading_div_1">      <div class="bwg_loading_div_2">        <div class="bwg_loading_div_3">          <div id="loading_div_0" class="bwg_spider_ajax_loading">          </div>        </div>      </div>    </div>            <form id="gal_front_form_0" class="bwg-hidden" method="post" action="#" data-current="0" data-shortcode-id="1" data-gallery-type="image_browser" data-gallery-id="0" data-tag="0" data-album-id="0" data-theme-id="1" data-ajax-url="./wp-admin/admin-ajax.php?action=bwg_frontend_data">          <div id="bwg_container3_0" class="bwg-background bwg-background-0">            	  <div id="bwg_image_browser_0" class="image_browser_images_conteiner_0 bwg-image_browser-images-wrapper bwg-container" data-params="{&quot;is_pro&quot;:false,&quot;image_right_click&quot;:0,&quot;gallery_id&quot;:&quot;0&quot;}" data-bwg="0" data-lightbox-url="./wp-admin/admin-ajax.php?action=GalleryBox&#038;current_view=0&#038;gallery_id=0&#038;tag=0&#038;theme_id=1&#038;shortcode_id=1&#038;sort_by=order&#038;order_by=asc&#038;current_url=.%2Fphoto-gallery%2F">      <div class="image_browser_images_0">                  <div class="image_browser_image_buttons_conteiner_0">            <div class="image_browser_image_buttons_0">                              <div class="bwg_image_browser_image_alt_0">                  <div class="bwg_image_alt_0" id="alt48">                    Image 1 (1)                  </div>                </div>                              <div class="bwg_image_browser_image_0">                                  <a style="position:relative;" class="bwg-a bwg_lightbox" data-image-id="48" data-elementor-open-lightbox="no">                    <img class="skip-lazy bwg-item0 bwg_image_browser_img bwg_image_browser_img_0 " src="./../wp-content/uploads/photo-gallery/imported_from_media_libray//Image-1-1.png" data-src="./wp-content/uploads/photo-gallery/imported_from_media_libray//Image-1-1.png" alt="Image 1 (1)">                  </a>                                </div>                          </div>          </div>                </div>    </div>    <style>/*pagination styles*/      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 {				text-align: center;				font-size: 12px;				font-family: segoe ui;				font-weight: bold;				color: #666666;				margin: 6px 0 4px;				display: block;      }      @media only screen and (max-width : 320px) {      #bwg_container1_0 #bwg_container2_0 .displaying-num_0 {     	 display: none;      }      }      #bwg_container1_0 #bwg_container2_0 .displaying-num_0 {				font-size: 12px;				font-family: segoe ui;				font-weight: bold;				color: #666666;				margin-right: 10px;				vertical-align: middle;      }      #bwg_container1_0 #bwg_container2_0 .paging-input_0 {				font-size: 12px;				font-family: segoe ui;				font-weight: bold;				color: #666666;				vertical-align: middle;      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled:hover,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.disabled:focus,			#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 input.bwg_current_page {				cursor: default;				color: rgba(102, 102, 102, 0.5);      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 input.bwg_current_page {				cursor: pointer;				text-align: center;				font-size: 12px;				font-family: segoe ui;				font-weight: bold;				color: #666666;				text-decoration: none;				padding: 3px 6px;				margin: 0;				border-radius: 0;				border-style: solid;				border-width: 1px;				border-color: #E3E3E3;				background-color: #FFFFFF;				opacity: 1.00;				box-shadow: 0;				transition: all 0.3s ease 0s;-webkit-transition: all 0.3s ease 0s;      }            #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.next-page:hover,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a.prev-page:hover {        color: #000000;      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 .first-page,      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 .last-page {        padding: 0% 7%;      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 .next-page {        margin: 0% 4% 0% 0%;      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 .prev-page {        margin: 0% 0% 0% 4%;      }      #bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {        font-size: 15px !important;        padding: 0% 7% !important;        border-style: none !important;        border-width: 1px;        border-color: #E3E3E3;        background-color: #FFFFFF;        opacity: 1.00;        transition: all 0.3s ease 0s;-webkit-transition: all 0.3s ease 0s;      }      .bwg_image_browser#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {         padding: 0% 11% !important;      }			#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 {        background-color: rgba(245, 245, 245, 0.90);        margin-top: 0;      }      .bwg_image_browser  .pagination-links_0 {        white-space: nowrap;      }      @media screen and (max-width: 465px) {        .bwg_image_browser#bwg_container1_0 #bwg_container2_0 .tablenav-pages_0 a {          padding: 0% 5% !important;          font-size: 13px;        }      }</style>      <span class="bwg_nav_cont_0">              <div class="tablenav-pages_0">                      <span class="pagination-links_0 pagination-links" data-pages-count="48">              <span class="pagination-links_col1">              <a class="bwg-a first-page disabled" title="Go to the first page">«</a>              <a class="bwg-a prev-page disabled" title="Go to the previous page">‹</a>              </span>							<span class="pagination-links_col2">									<input type="number" class="bwg_current_page" name="bwg_current_page" value="1" data-url-info="page_number_0" onkeypress="return bwg_change_page_0(event, this)" min="1" oninput="validity.valid||(value='')">										of										<span class="total-pages_0">											48										</span>							</span>              <span class="pagination-links_col3">                <a class="bwg-a next-page-0" title="Go to the next page" href="./index.html?page_number_0=2">›</a>                <a class="bwg-a last-page-0" title="Go to the last page" href="./index.html?page_number_0=48">»</a>              </span>						</span>						        </div>                <input type="hidden" id="page_number_0" name="page_number_0" value="1">      <script type="text/javascript">        function spider_page_0(cur, x, y, load_more) {          if (typeof load_more == "undefined") {            var load_more = false;          }          if (jQuery(cur).hasClass('disabled')) {            return false;          }          var items_county_0 = 48;          switch (y) {            case 1:              if (x >= items_county_0) {                document.getElementById('page_number_0').value = items_county_0;              }              else {                document.getElementById('page_number_0').value = x + 1;              }              break;            case 2:              document.getElementById('page_number_0').value = items_county_0;              break;            case -1:              if (x == 1) {                document.getElementById('page_number_0').value = 1;              }              else {                document.getElementById('page_number_0').value = x - 1;              }              break;            case -2:              document.getElementById('page_number_0').value = 1;              break;						case 0:              document.getElementById('page_number_0').value = x;              break;            default:              document.getElementById('page_number_0').value = 1;          }          bwg_ajax('gal_front_form_0', '0', 'bwg_image_browser_0', '0', '', 'gallery', 0, '', '', load_more, '', 1);        }                    jQuery('.first-page disabled').on('click', function () {              spider_page_0(this, 1, -2, 'numeric');              return false;            });            jQuery('.prev-page disabled').on('click', function () {              spider_page_0(this, 1, -1, 'numeric');              return false;            });            jQuery('.next-page-0').on('click', function () {              spider_page_0(this, 1, 1, 'numeric');              return false;            });            jQuery('.last-page-0').on('click', function () {              spider_page_0(this, 1, 2, 'numeric');              return false;            });        				/* Change page on input enter. */        function bwg_change_page_0( e, that ) {          if (  e.key == 'Enter' ) {            var to_page = parseInt(jQuery(that).val());            var pages_count = jQuery(that).parents(".pagination-links").data("pages-count");            var current_url_param = jQuery(that).attr('data-url-info');            if (to_page > pages_count) {              to_page = 1;            }	 												spider_page_0(this, to_page, 0, 'numeric');							return false;						          }          return true;        }        jQuery('.bwg_load_btn_0').on('click', function () {            spider_page_0(this, 1, 1, true);            return false;        });      </script>      </span>                </div>        </form>          <style>#bwg_container1_0 #bwg_container2_0 #spider_popup_overlay_0 {          background-color: #000000;          opacity: 0.70;          }</style>        <div id="bwg_spider_popup_loading_0" class="bwg_spider_popup_loading"></div>        <div id="spider_popup_overlay_0" class="spider_popup_overlay" onclick="spider_destroypopup(1000)"></div>        <input type="hidden" id="bwg_random_seed_0" value="619376927">                </div>    </div>    <script>      if (document.readyState === 'complete') {        if( typeof bwg_main_ready == 'function' ) {          if ( jQuery("#bwg_container1_0").height() ) {            bwg_main_ready(jQuery("#bwg_container1_0"));          }        }      } else {        document.addEventListener('DOMContentLoaded', function() {          if( typeof bwg_main_ready == 'function' ) {            if ( jQuery("#bwg_container1_0").height() ) {             bwg_main_ready(jQuery("#bwg_container1_0"));            }          }        });      }    </script>    
+	</header><!-- .entry-header (This was commented out by Damian on June 14, 2014)-->
 
-		
-	</div>
 <!-- .entry-content -->
 
 	<footer class="entry-footer">
-		
+
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
 
 
-				
+
 
-			
+
 
 		</main><!-- #main -->
 	</div>
 <!-- #primary -->
 	</div>
-<div class="col-md-4">
-<div id="secondary" class="widget-area" role="complementary">
-	<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="./">
-				<label>
-					<span class="screen-reader-text">Search for:</span>
-					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s">
-				</label>
-				<input type="submit" class="search-submit" value="Search">
-			</form></aside>
-		<aside id="recent-posts-2" class="widget widget_recent_entries">
-		<h1 class="widget-title">Recent Posts</h1>
-		<ul>
-											<li>
-					<a href="./../2017/12/10/free-christmas-concert/index.html">Free Christmas Concert</a>
-									</li>
-											<li>
-					<a href="./../2017/06/14/recent-songs/index.html">Recent Songs</a>
-									</li>
-											<li>
-					<a href="./../2017/06/14/reviews/index.html">Reviews</a>
-									</li>
-					</ul>
 
-		</aside><aside id="calendar-3" class="widget widget_calendar"><h1 class="widget-title">Calendar</h1>
-<div id="calendar_wrap" class="calendar_wrap">
-<table id="wp-calendar" class="wp-calendar-table">
-	<caption>June 2022</caption>
-	<thead>
-	<tr>
-		<th scope="col" title="Monday">M</th>
-		<th scope="col" title="Tuesday">T</th>
-		<th scope="col" title="Wednesday">W</th>
-		<th scope="col" title="Thursday">T</th>
-		<th scope="col" title="Friday">F</th>
-		<th scope="col" title="Saturday">S</th>
-		<th scope="col" title="Sunday">S</th>
-	</tr>
-	</thead>
-	<tbody>
-	<tr>
-		<td colspan="2" class="pad">&nbsp;</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-<td>5</td>
-	</tr>
-	<tr>
-		<td>6</td>
-<td>7</td>
-<td>8</td>
-<td id="today">9</td>
-<td>10</td>
-<td>11</td>
-<td>12</td>
-	</tr>
-	<tr>
-		<td>13</td>
-<td>14</td>
-<td>15</td>
-<td>16</td>
-<td>17</td>
-<td>18</td>
-<td>19</td>
-	</tr>
-	<tr>
-		<td>20</td>
-<td>21</td>
-<td>22</td>
-<td>23</td>
-<td>24</td>
-<td>25</td>
-<td>26</td>
-	</tr>
-	<tr>
-		<td>27</td>
-<td>28</td>
-<td>29</td>
-<td>30</td>
-		<td class="pad" colspan="3">&nbsp;</td>
-	</tr>
-	</tbody>
-	</table>
-<nav aria-label="Previous and next months" class="wp-calendar-nav">
-		<span class="wp-calendar-nav-prev"><a href="./../2017/12/index.html">&laquo; Dec</a></span>
-		<span class="pad">&nbsp;</span>
-		<span class="wp-calendar-nav-next">&nbsp;</span>
-	</nav>
-</div></aside><aside id="bwp_gallery-2" class="widget bwp_gallery"><h1 class="widget-title">Photo Gallery</h1>
-<style id="bwg-style-1">#bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails {
-      width: 404px;
-              justify-content: center;
-        margin:0 auto !important;
-              background-color: rgba(255, 255, 255, 0.00);
-            padding-left: 4px;
-      padding-top: 4px;
-      max-width: 100%;
-            }
-        #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-item {
-      justify-content: flex-start;
-      max-width: 100px;
-          }
-    #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-item > a {
-       margin-right: 4px;
-       margin-bottom: 4px;
-    }
-    #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-item0 {
-      padding: 0px;
-            background-color:rgba(255,255,255, 0.30);
-      border: 0px none #CCCCCC;
-      opacity: 1.00;
-      border-radius: 0;
-      box-shadow: 0px 0px 0px #888888;
-    }
-    #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-item1 img {
-      max-height: none;
-      max-width: none;
-      padding: 0 !important;
-    }
-        @media only screen and (min-width: 480px) {
-      #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-item0 {
-        transition: all 0.3s ease 0s;-webkit-transition: all 0.3s ease 0s;      }
-      #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-item0:hover {
-        -ms-transform: scale(1.1);
-        -webkit-transform: scale(1.1);
-        transform: scale(1.1);
-      }
-    }
-          #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-item1 {
-      padding-top: 100%;
-    }
-        #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-title1 {
-      position: absolute;
-      top: 0;
-      z-index: 100;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      flex-direction: column;
-      opacity: 0;
-    }
-	      #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-title2,
-    #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-ecommerce2 {
-      color: #FFFFFF;
-      font-family: segoe ui;
-      font-size: 16px;
-      font-weight: bold;
-      padding: 2px;
-      text-shadow: 0px 0px 0px #888888;
-      max-height: 100%;
-    }
-    #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-thumb-description span {
-    color: #323A45;
-    font-family: Ubuntu;
-    font-size: 12px;
-    max-height: 100%;
-    word-wrap: break-word;
-    }
-    #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-play-icon2 {
-      font-size: 32px;
-    }
-    #bwg_container1_1 #bwg_container2_1 .bwg-container-1.bwg-standard-thumbnails .bwg-ecommerce2 {
-      font-size: 19.2px;
-      color: #CCCCCC;
-    }</style>    <div id="bwg_container1_1" class="bwg_container bwg_thumbnail bwg_thumbnails" data-right-click-protection="0" data-bwg="1" data-gallery-type="thumbnails" data-current-url="./photo-gallery/" data-lightbox-url="./wp-admin/admin-ajax.php?action=GalleryBox&#038;current_view=1&#038;gallery_id=1&#038;tag=0&#038;theme_id=1&#038;shortcode_id=0&#038;sort_by=casual&#038;order_by=ASC&#038;current_url=.%2Fphoto-gallery%2F" data-gallery-id="1" data-popup-width="800" data-popup-height="500" data-is-album="gallery" data-buttons-position="bottom">
-      <div id="bwg_container2_1">
-             <div id="ajax_loading_1" class="bwg_loading_div_1">
-      <div class="bwg_loading_div_2">
-        <div class="bwg_loading_div_3">
-          <div id="loading_div_1" class="bwg_spider_ajax_loading">
-          </div>
-        </div>
-      </div>
-    </div>
-            <form id="gal_front_form_1" class="bwg-hidden" method="post" action="#" data-current="1" data-shortcode-id="0" data-gallery-type="thumbnails" data-gallery-id="1" data-tag="0" data-album-id="0" data-theme-id="1" data-ajax-url="./wp-admin/admin-ajax.php?action=bwg_frontend_data">
-          <div id="bwg_container3_1" class="bwg-background bwg-background-1">
-                <div data-max-count="4" data-thumbnail-width="100" data-bwg="1" data-gallery-id="1" data-lightbox-url="./wp-admin/admin-ajax.php?action=GalleryBox&amp;current_view=1&amp;gallery_id=1&amp;tag=0&amp;theme_id=1&amp;shortcode_id=0&amp;sort_by=casual&amp;order_by=ASC&amp;current_url=.%2Fphoto-gallery%2F" id="bwg_thumbnails_1" class="bwg-container-1 bwg-thumbnails bwg-standard-thumbnails bwg-container bwg-border-box">
-            <div class="bwg-item">
-        <a class="bwg-a bwg_lightbox" data-image-id="8" href="./../wp-content/uploads/photo-gallery/imported_from_media_libray//Picture29.png" data-elementor-open-lightbox="no">
-                <div class="bwg-item0 ">
-          <div class="bwg-item1 ">
-            <div class="bwg-item2">
-              <img class="skip-lazy bwg_standart_thumb_img_1 " data-id="8" data-width="" data-height="" data-src="./wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Picture29.png" src="./../wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Picture29.png" alt="Picture29">
-            </div>
-            <div class="">
-              <div class="bwg-title1"><div class="bwg-title2">Picture29</div></div>                                        </div>
-          </div>
-        </div>
-                        </a>
-              </div>
-            <div class="bwg-item">
-        <a class="bwg-a bwg_lightbox" data-image-id="30" href="./../wp-content/uploads/photo-gallery/imported_from_media_libray//Image-1-6.jpg" data-elementor-open-lightbox="no">
-                <div class="bwg-item0 ">
-          <div class="bwg-item1 ">
-            <div class="bwg-item2">
-              <img class="skip-lazy bwg_standart_thumb_img_1 " data-id="30" data-width="" data-height="" data-src="./wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Image-1-6.jpg" src="./../wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Image-1-6.jpg" alt="Image 1 (6)">
-            </div>
-            <div class="">
-              <div class="bwg-title1"><div class="bwg-title2">Image 1 (6)</div></div>                                        </div>
-          </div>
-        </div>
-                        </a>
-              </div>
-            <div class="bwg-item">
-        <a class="bwg-a bwg_lightbox" data-image-id="23" href="./../wp-content/uploads/photo-gallery/imported_from_media_libray//Picture13.jpg" data-elementor-open-lightbox="no">
-                <div class="bwg-item0 ">
-          <div class="bwg-item1 ">
-            <div class="bwg-item2">
-              <img class="skip-lazy bwg_standart_thumb_img_1 " data-id="23" data-width="" data-height="" data-src="./wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Picture13.jpg" src="./../wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Picture13.jpg" alt="Picture13">
-            </div>
-            <div class="">
-              <div class="bwg-title1"><div class="bwg-title2">Picture13</div></div>                                        </div>
-          </div>
-        </div>
-                        </a>
-              </div>
-            <div class="bwg-item">
-        <a class="bwg-a bwg_lightbox" data-image-id="42" href="./../wp-content/uploads/photo-gallery/imported_from_media_libray//Image-1-3.jpg" data-elementor-open-lightbox="no">
-                <div class="bwg-item0 ">
-          <div class="bwg-item1 ">
-            <div class="bwg-item2">
-              <img class="skip-lazy bwg_standart_thumb_img_1 " data-id="42" data-width="" data-height="" data-src="./wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Image-1-3.jpg" src="./../wp-content/uploads/photo-gallery/imported_from_media_libray//thumb/Image-1-3.jpg" alt="Image 1 (3)">
-            </div>
-            <div class="">
-              <div class="bwg-title1"><div class="bwg-title2">Image 1 (3)</div></div>                                        </div>
-          </div>
-        </div>
-                        </a>
-              </div>
-          </div>
-              </div>
-        </form>
-          <style>#bwg_container1_1 #bwg_container2_1 #spider_popup_overlay_1 {
-          background-color: #000000;
-          opacity: 0.70;
-          }</style>        <div id="bwg_spider_popup_loading_1" class="bwg_spider_popup_loading"></div>
-        <div id="spider_popup_overlay_1" class="spider_popup_overlay" onclick="spider_destroypopup(1000)"></div>
-        <input type="hidden" id="bwg_random_seed_1" value="450556207">
-                </div>
-    </div>
-    <script>
-      if (document.readyState === 'complete') {
-        if( typeof bwg_main_ready == 'function' ) {
-          if ( jQuery("#bwg_container1_1").height() ) {
-            bwg_main_ready(jQuery("#bwg_container1_1"));
-          }
-        }
-      } else {
-        document.addEventListener('DOMContentLoaded', function() {
-          if( typeof bwg_main_ready == 'function' ) {
-            if ( jQuery("#bwg_container1_1").height() ) {
-             bwg_main_ready(jQuery("#bwg_container1_1"));
-            }
-          }
-        });
-      }
-    </script>
-    </aside>	<div class="squarebanner clearfix">
-	<h3 class="sidetitl"> Sponsors </h3>
-<ul>
-<li>
-<a rel="nofollow" title=""><img alt="" style="vertical-align:bottom;"></a>
-</li>			
-
-<li>
-<a rel="nofollow" title=""><img alt="" style="vertical-align:bottom;"></a>
-</li>
-
-<li>
-<a rel="nofollow" title=""><img alt="" style="vertical-align:bottom;"></a>
-</li>
-
-<li>
-<a rel="nofollow" title=""><img alt="" style="vertical-align:bottom;"></a>
-</li>
-</ul>
-</div>
-</div>
-<!-- #secondary -->
-</div>
-</div></div>
-
-	</div>
-<!-- #content -->
-	<div id="footer-widgets" class="clearfix">
-		<div class="container"> <div class="row"> 
-					</div>
-</div>
-	</div>
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="container"><div class="row"> 
+		<div class="container"><div class="row">
 			<div class="col-md-12">
 				<div class="site-info">
 				Copyright &copy; 2022 <a href="./../index.html" title="Bromley Community Choir">Bromley Community Choir</a> - Bromley Community Choir <br>
@@ -467,6 +298,124 @@ var wpcf7 = {"api":{"root":".\/wp-json\/","namespace":"contact-form-7\/v1"}};
 <script type="text/javascript" src="./../wp-content/themes/Malaka/js/navigation.js?ver=20120206" id="fabthemes-navigation-js"></script>
 <script type="text/javascript" src="./../wp-content/themes/Malaka/js/skip-link-focus-fix.js?ver=20130115" id="fabthemes-skip-link-focus-fix-js"></script>
 <script type="text/javascript" src="./../wp-includes/js/wp-embed.min.js?ver=5.8.4" id="wp-embed-js"></script>
+
+<script>
+(function(){
+//If you want to include more images, add the link name and URL of the image in the array list below.
+	let images_list = [
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-1.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-1.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-2.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-3.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-4.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-5.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Image-1-6.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture1.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture10.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture10.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture11.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture12.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture13.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture14.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture15.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture16.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture17.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture18.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture19.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture2.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture20.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture22.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture23-1.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture23-1.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture24.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture26.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture27.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture28.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture29.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture3.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture30.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture31.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture32-1.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture32.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture33.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture34.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture35.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture36.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture4.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture5.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture5.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture6.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture7.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture8.jpg","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture8.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture9.png","name":"","link":""},
+		{"url":"https://bromleycomchoir.com/wp-content/uploads/photo-gallery/imported_from_media_libray/Picture23.png","name":"","link":""}
+	];
+
+	let slider_id = document.querySelector("#hcg-slider-1");
+
+	// append all images
+	let dots_div = "";
+	let images_div = "";
+	for (let i = 0; i < images_list.length; i++) {
+		// if no link without href="" tag
+		let href = (images_list[i].link == "" ? "":' href="'+images_list[i].link+'"');
+		images_div += '<a'+href+' class="hcg-slides animated"'+(i === 0 ? ' style="display:block"':'')+'>'+
+						'<span class="hcg-slide-number">'+(i+1)+'/'+images_list.length+'</span>'+
+						'<img src="'+images_list[i].url+'" alt="'+images_list[i].name+'">'+
+						'<span class="hcg-slide-text">'+images_list[i].name+'</span>'+
+					 '</a>';
+		dots_div += '<span class="hcg-slide-dot'+(i === 0 ? ' dot-active':'')+'" data-id="'+i+'"></span>';
+	}
+	slider_id.querySelector(".hcg-slider-body").innerHTML = images_div;
+	slider_id.querySelector(".hcg-slide-dot-control").innerHTML = dots_div;
+
+	let slide_index = 0;
+
+	let images = slider_id.querySelectorAll(".hcg-slides");
+	let dots = slider_id.querySelectorAll(".hcg-slide-dot");
+	let prev_button = slider_id.querySelector(".hcg-slide-prev");
+	let next_button = slider_id.querySelector(".hcg-slide-next");
+
+	function showSlides() {
+		if (slide_index > images.length-1) {
+			slide_index = 0;
+		}
+		if (slide_index < 0) {
+			slide_index = images.length-1;
+		}
+		for (let i = 0; i < images.length; i++) {
+			images[i].style.display = "none";
+			dots[i].classList.remove("dot-active");
+			if (i == slide_index) {
+				images[i].style.display = "block";
+				dots[i].classList.add("dot-active");
+			}
+		}
+	}
+
+	prev_button.addEventListener("click", function(event) {
+		event.preventDefault();
+		slide_index--;
+		showSlides();
+	}, false);
+
+	next_button.addEventListener("click", function(event){
+		event.preventDefault();
+		slide_index++;
+		showSlides();
+	}, false);
+
+	function dot_click(event) {
+		slide_index = event.target.dataset.id;
+		showSlides();
+	}
+
+	for (let i = 0; i < dots.length; i++) {
+		dots[i].addEventListener("click", dot_click, false);
+	}
+})();
+</script>
 
 </body>
 </html>
